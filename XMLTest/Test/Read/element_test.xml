@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.0/archimate3_Diagram.xsd" identifier="id-2ee4bc69">
+  <name xml:lang="fr">PLATEFORME_VNEXT</name>
+  <documentation xml:lang="fr">
+    bienvenu sur le site de présentation de la plateforme VNext&#xD;
+    la plateforme VNext regroupe:&#xD;
+    - le container de lancement de tools&#xD;
+    - l'infrastructure de services&#xD;
+    &#xD;
+    &#xD;
+    Ce site s'appuie sur l'utilisation:&#xD;
+    - de l'outil Archi ( http://www.archimatetool.com/ ) qui permet la gestion de toutes les étapes de &#xD;
+    - la démarche d'architecture TOGAF ( https://fr.wikipedia.org/wiki/The_Open_Group_Architecture_Framework ) selon &#xD;
+    - le formalisme Archimate ( http://www.archimate.nl/en/about_archimate/what_is_archimate.html )&#xD;
+    &#xD;
+    l'outil doit être mis à jour pour intégrer les plug-ins Maidis (dans D:\dev\NouvelleArchi\TOGAF\Réferentiel d'outils\outils développement\Modélisation\Archi\patchs ) et la configuration des vues et relations autorisés ( dans D:\dev\NouvelleArchi\TOGAF\Réferentiel d'outils\outils développement\Modélisation\Archi\patchs )&#xD;
+    &#xD;
+    quelques sites de présentation:&#xD;
+    TOGAF: http://fr.slideshare.net/eugeniomauri/eugenio-mauri-prsentation-de-togaf?next_slideshow=3&#xD;
+    Archimate: http://fr.slideshare.net/makumbe/archimate-21-an-introduction&#xD;
+    &#xD;
+    l'accès au site internet du modèle courant est http://smdspalnx10.maidis.com/vnext/&#xD;
+    &#xD;
+    &#xD;
+    Le panneau à gauche permet de parcourir tout les éléments du modèle, structuré en 2 grandes parties:&#xD;
+    &#xD;
+    - Model Content décrit tout les éléments du modèle. Ces éléments sont classés en fonction de leur type&#xD;
+    - Views décrit les interactions entre ces éléments. Chaque vue ne représente qu'un sous-ensemble d'interactions pertinentes pour décrire une problématique particulière du système.&#xD;
+    &#xD;
+    Le panneau en bas à gauche décrit les informations textuels de documentation de chaque élément ou vue selectionné&#xD;
+    &#xD;
+    Démarche TOGAF&#xD;
+    -------------------&#xD;
+    L'avancement des étapes TOGAF dans le processus ADM est décrit dans l'arborescence Views/Architecte logiciel/ADM.&#xD;
+    La vue processus Complet ( Views/Architecte logiciel/ADM/Processus complet ) est le point d'entrée pour afficher les vues par étape ADM. Chaque élément de cette vue intègre un lien sur les vues imbriquées.&#xD;
+    Chaque vue d'étape ( Views/Architecte logiciel/ADM/n° étape - Libellé de l'étape ) devra être mise à jour à chaque ajout d'une vue par un participant, pour que toutes les vues du modèle soit référencées par ADM.&#xD;
+    &#xD;
+    &#xD;
+    Gestion des éléments&#xD;
+    ----------------------&#xD;
+    Les éléments sont classés en fonction de leur définition dans le processus ADM de TOGAF:&#xD;
+    - Business Layer pour l'étape 2, subdivisé par domaines métiers et domaine de la plateforme VNext&#xD;
+    - Application Layer pour l'étape 3, subdivisé par composants métier et composants de la plateforme VNext&#xD;
+    - Technology Layer pour l'étape 4, subdivisé par infrastructure logicielle&#xD;
+    - Motivation pour les étapes 0, 1 et gestion des exigences, subdivisé par aspects de motivation:&#xD;
+    - Constats décrit l'existant, subdivisé par domaine puis par qualité (positif ou négatif)&#xD;
+    - Contraintes décrit les contraintes du marché, subdivisé par domaine &#xD;
+    - Exigences décrit les exigences de la VNext, subdivisé par domaine puis sous-domaine (selon la classification FURPS+)&#xD;
+    - Moteurs décrit les éléments poussant à la mise en place de la VNext, subdivisé par point de vue &#xD;
+    - Objectifs décrit les points d'arrivée que l'on veut atteindre de manière quantifié avec la VNext, subdivisé par catégories &#xD;
+    - Parties prenantes décrit toutes les catégorie de personnes participante au projet, subdivisé par point de vue&#xD;
+    - Principes décrit les grandes caractéristiques attendues pour la VNext&#xD;
+    - Implementation pour l'étape 6, subdivisé par type d'élément&#xD;
+    - Connectors décrit les connecteurs de relations&#xD;
+    - Relation décrit les relations entre éléments du modèle, subdivisé par type de relation&#xD;
+    &#xD;
+    Vues par participant&#xD;
+    ---------------------&#xD;
+    chaque participant a une vue brainstorming qu'il peut utiliser comme brouillon pour sauvegarder ses idées correspondant à son domaine d'expertise.&#xD;
+    chaque participant a également une vue Analyse de l'existant où il décrit les constats qu'il fait sur la version actuelle de l'application&#xD;
+    une vue brainstorming globale permet de fusionner les idées des différents intervenant&#xD;
+    chaque participant a autrement des vues qu'il peut compléter adaptées à son domaine de compétence&#xD;
+    le responsable du modèle globale et le garant de la mise en oeuvre du processus ADM de TOGAF est l'architecte logiciel&#xD;
+    &#xD;
+    &#xD;
+    Exploitation du modèle&#xD;
+    ------------------------&#xD;
+    L'exploitation se fait à partir des fonctions d'export et de reporting de l'outil Archi&#xD;
+    points à connaître:&#xD;
+    - pour l'export CSV du modèle, prendre la tabulation comme séparateur et l'option "strip newline  caracters"&#xD;
+    - pour l'importation dans Excel, faire nouveau classeur, onglet Données, commande Fichier texte, sélectionner le format UTF8 en entrée.&#xD;
+    &#xD;
+    configuration de l'outil&#xD;
+    ------------------------&#xD;
+    mettre la grille à 5  (préférences) pour améliorer le positionnement des objets graphiques&#xD;
+    &#xD;
+    trucs et astuces&#xD;
+    ----------------&#xD;
+    pour vérifier qu'une exigence est bien implémentée par au moins une fonctionnalité, sélectionner l'exigences puis dans l'onglet Visualiser choisir le point de vue business process&#xD;
+    utiliser les relations used-by pour l'accès à une interface ou un service&#xD;
+    utiliser les relations trigger pour l'exécution d'une fonction sans tranfert de responsabilité (par exemple, appel d'une fonction utilitaire)&#xD;
+    utiliser les relations flow pour l'exécution d'une fonction avec transfert de responsabilité (par exemple, appel d'un objet d'une autre couche)&#xD;
+    utiliser les collaborations métier pour décrire les équipes associées à une tâche particulière&#xD;
+    utiliser les intéractions métier associés à une collaboration métier pour décrire cette tâche particulière&#xD;
+    utiliser les collaborations applicative pour décrire une communication entre applications, pour gérer par exemple un import&#xD;
+    utiliser une intéraction applicative pour décrire justement cet import&#xD;
+    utiliser les représentations en association avec les objets métiers pour décrire les différents formats de représentation de ces entités&#xD;
+    associer à ces représentations des signifiants (meaning) pour décrire l'intention de la représentation&#xD;
+    associer des valeurs à des service qui décrit les apports en terme mesurable: gain de temps, d'argent...&#xD;
+    ajouter des contrats pour lier des objets métiers à des contrats&#xD;
+    pour mettre à jour les relations d'une vue, cliquer sur l'élément à mettre à jour, puis dans l'onglet analysis, sélectionner la relation et la déposer sur la vue
+  </documentation>
+  <elements>
+    <element identifier="id-99f5f62f-7ed2-4fa0-9f85-7040be5bd90a" xsi:type="Product">
+      <name xml:lang="fr">POC Accueil patient</name>
+    </element>
+    <element identifier="id-c4dc403f-75ad-4217-8aa0-01cd2493c060" xsi:type="TechnologyFunction">
+      <name xml:lang="fr">ConnectivityPlugin (A COMPLETER)</name>
+      <documentation xml:lang="fr">test de la connectivité&#xD;
+&#xD;
+https://github.com/jamesmontemagno/ConnectivityPlugin&#xD;
+&#xD;
+- portable Xamarin</documentation>
+    </element>
+  </elements>
+  <propertyDefinitions>
+    <propertyDefinition identifier="propid-8" type="string">
+      <name />
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-4" type="string">
+      <name>ImpactObjectifs</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-7" type="string">
+      <name>ImpactPrincipes</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-6" type="string">
+      <name>ImpactPrincipesNégatif</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-5" type="string">
+      <name>ImpactPrincipesPositif</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-1" type="string">
+      <name>LOC</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-3" type="string">
+      <name>Priorité</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-2" type="string">
+      <name>icon</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+</model>
