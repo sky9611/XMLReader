@@ -37,21 +37,21 @@ namespace XMLTest
             else
             {
                 list_element=doc.DescendantsAndSelf("element").Select(x=>
-				new Element
-				{
-					identifier_=x.Element("Element").Attribute("identifier").Value,
-					type_=x.Element("Element").Attribute("type").Value,
-					name_= (x.Element("name")!=null) ? x.Element("name").Value : "",
-					documentation_= (x.Elements("documentation")!=null) ? x.Elements("documentation").Value : "",
-					properties_ = (x.Elements("properties")!=null) ? x.DescendantsAndSelf("property").Select(y=>
+					new Element
+					{
+						identifier_=x.Element("Element").Attribute("identifier").Value,
+						type_=x.Element("Element").Attribute("type").Value,
+						name_= (x.Element("name")!=null) ? x.Element("name").Value : "",
+						documentation_= (x.Elements("documentation")!=null) ? x.Elements("documentation").Value : "",
+						properties_ = (x.Elements("properties")!=null) ? x.DescendantsAndSelf("property").Select(y=>
 						string prop_name;
 						property_definition_map.TryGetValue(y.Elements("property").Attribute("propertyDefinitionRef").Value,prop_name);
-						new Property
-						{
-							name = prop_name;
-							value = y.Element("Value").Value;
-						}).ToList<Property>() : new List<Property>()
-				).ToList<Element>();
+							new Property
+							{
+								name = prop_name,
+								value = y.Element("Value").Value
+							}).ToList<Property>() : null()
+					).ToList<Element>();
             }
         }
 		
