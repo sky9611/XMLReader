@@ -7,7 +7,7 @@ namespace XMLTest
 {
     class Program
     {
-        XDocument doc = new XmlDocument();
+        XElement doc = new XElement();
         List<Element> list_element = new List<Element>(); 
 		Dictionary<string,string> property_definition_map = new Dictionary<string,string>();
         public void ReadXml(string path)
@@ -23,8 +23,12 @@ namespace XMLTest
             }
             else
             {
-				doc.DescendantsAndSelf("propertyDefinition").Select(x=>
-					property_definition_map.add(x.Element("propertyDefinition").Attribute("identifier").Value, x.Element("name").Value));
+				IEnumerable<XElement> elements = from element in doc.Elements("element")
+												 select element;
+				foreach(XElement ele in elements)
+				{
+					property_definition_map.add(ele.Element("propertyDefinition").Attribute("identifier").Value, ele.Element("name").Value));
+				}				
 			}
 		}
 
