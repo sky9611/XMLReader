@@ -1,0 +1,11 @@
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\obj\Debug\netcoreapp2.0\XMLTest.csprojResolveAssemblyReference.cache
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\obj\Debug\netcoreapp2.0\XMLTest.csproj.CoreCompileInputs.cache
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\obj\Debug\netcoreapp2.0\XMLTest.AssemblyInfoInputs.cache
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\obj\Debug\netcoreapp2.0\XMLTest.AssemblyInfo.cs
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\bin\Debug\netcoreapp2.0\XMLTest.deps.json
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\bin\Debug\netcoreapp2.0\XMLTest.runtimeconfig.json
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\bin\Debug\netcoreapp2.0\XMLTest.runtimeconfig.dev.json
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\bin\Debug\netcoreapp2.0\XMLTest.dll
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\bin\Debug\netcoreapp2.0\XMLTest.pdb
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\obj\Debug\netcoreapp2.0\XMLTest.dll
+D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\obj\Debug\netcoreapp2.0\XMLTest.pdb

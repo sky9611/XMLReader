@@ -58,13 +58,26 @@ namespace XMLTest
 
         public override string ToString()
         {
-            return base.ToString();
+            string s;
+            s = "identifier: " + this.identifier_ + "\r\nname: " + this.name_ + "\r\ntype: " + this.type_ + "\r\ndocumentation: " + this.documentation_ + "\r\nproperties: ";
+            if (this.properties_ != null)
+            {
+                int i = 0;
+                foreach(Property p in this.properties_)
+                {
+                    if (i != 0)
+                        s += "            ";
+                    s += p.name + " - " + p.value+"\r\n";
+                    i++;
+                }
+            }
+            return s;
         }
     }
 
     public struct Property
     {
-        string name;
-        int value;
+        public string name;
+        public int value;
     }
 }

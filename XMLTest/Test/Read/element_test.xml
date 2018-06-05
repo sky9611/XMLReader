@@ -102,6 +102,43 @@ https://github.com/jamesmontemagno/ConnectivityPlugin&#xD;
 &#xD;
 - portable Xamarin</documentation>
     </element>
+	<element identifier="id-ca9c2d07" xsi:type="TechnologyFunction">
+      <name xml:lang="fr">Carousel (A COMPLETER)</name>
+      <documentation xml:lang="fr">carrousel d'images paramétrable&#xD;
+&#xD;
+https://wpfcarousel.codeplex.com/	&#xD;
+https://github.com/Larain/WPF-Carousel (?)&#xD;
+&#xD;
+- rotation automatique sur la sélection&#xD;
+- vitesse de rotation&#xD;
+- angle d'affichage&#xD;
+- brume sur objet en fond&#xD;
+- taille sur objet de fond&#xD;
+&#xD;
+composant intégré dans la démo</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="fr">407</value>
+        </property>
+      </properties>
+    </element>
+	<element identifier="id-1b95e9d8" xsi:type="Goal">
+      <name xml:lang="fr">augmenter le nombre de clients</name>
+      <documentation xml:lang="fr">- toucher des clients qui ne sont pas actuellement ciblé: pas la bonne plateforme (Mac par exemple), pas les mêmes besoins fonctionnelles.&#xD;
+- ouvrir plus le logiciel pour qu'il puisse s'interconnecter avec un existant: services métier, création dynamique de tools.&#xD;
+- vendre à l'internationale</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-4">
+          <value xml:lang="fr">3</value>
+        </property>
+        <property propertyDefinitionRef="propid-5">
+          <value xml:lang="fr">6</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="fr">1</value>
+        </property>
+      </properties>
+    </element>
   </elements>
   <propertyDefinitions>
     <propertyDefinition identifier="propid-8" type="string">
