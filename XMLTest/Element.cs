@@ -1,46 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace XMLTest
 {
     public class Element
     {
-        private	string identifier_;
-        private string type_;
-        private string name_;
-        private string documentation_;
-        private List<Property> properties_;
-		
-		public string Identifier_
-		{
-			get { return identifier_; }
-			set { identifier_ = value; }
-		}
-		
-		public string Type_
-		{
-			get { return type_; }
-			set { type_ = value; }
-		}
-		
-		public string Name_
-		{
-			get { return name_; }
-			set { name_ = value; }
-		}
 
-		public string Documentation_
-		{
-			get { return documentation_; }
-			set { documentation_ = value; }
-		}
+        public string Identifier_ { get; set; }
 
-		public List<Property> Properties_
-		{
-			get { return properties_; }
-			set { properties_ = value; }
-		}
+        public string Type_ { get; set; }
+
+        public string Name_ { get; set; }
+
+        public string Documentation_ { get; set; }
+
+        public List<Property> Properties_ { get; set; }
 
 
         public Element()
@@ -49,21 +22,21 @@ namespace XMLTest
 
         public Element(string identifier_, string type_, string name_, string documentation_, List<Property> properties_)
         {
-            this.identifier_ = identifier_;
-            this.type_ = type_;
-            this.name_ = name_;
-            this.documentation_ = documentation_;
-            this.properties_ = properties_;
+            this.Identifier_ = identifier_;
+            this.Type_ = type_;
+            this.Name_ = name_;
+            this.Documentation_ = documentation_;
+            this.Properties_ = properties_;
         }
 
         public override string ToString()
         {
             string s;
-            s = "identifier: " + this.identifier_ + "\r\nname: " + this.name_ + "\r\ntype: " + this.type_ + "\r\ndocumentation: " + this.documentation_ + "\r\nproperties: ";
-            if (this.properties_ != null)
+            s = "identifier: " + this.Identifier_ + "\r\nname: " + this.Name_ + "\r\ntype: " + this.Type_ + "\r\ndocumentation: " + this.Documentation_ + "\r\nproperties: ";
+            if (this.Properties_ != null)
             {
                 int i = 0;
-                foreach(Property p in this.properties_)
+                foreach(Property p in this.Properties_)
                 {
                     if (i != 0)
                         s += "            ";
@@ -78,6 +51,6 @@ namespace XMLTest
     public struct Property
     {
         public string name;
-        public int value;
+        public string value;
     }
 }

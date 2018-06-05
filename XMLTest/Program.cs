@@ -58,7 +58,8 @@ namespace XMLTest
                                    new Property
                                    {
                                        name = property_definition_map[((XElement)y).Attribute("propertyDefinitionRef").Value],
-                                       value = Int32.Parse(((XElement)y).Element(NP + "value").Value)
+                                       //value = Int32.Parse(((XElement)y).Element(NP + "value").Value)
+                                       value = ((XElement)y).Element(NP + "value").Value
                                    }
                               ).ToList() : null
                            )).ToList();
@@ -77,7 +78,7 @@ namespace XMLTest
         static void Main(string[] args)
         {
             Program program = new Program();
-            var path = @"PLATEFORME_VNEXT.xml";
+            var path = @"D:\documents\INSA\maidis\vs\test\XMLTest\XMLTest\Test\Read\PLATEFORME_VNEXT.xml";
             //var path = @"Test\Read\element_test.xml";
             program.ReadXml(path);
             program.GetPropertyDefinition();
